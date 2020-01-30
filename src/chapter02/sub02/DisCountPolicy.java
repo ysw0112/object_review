@@ -1,11 +1,10 @@
 package chapter02.sub02;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public abstract class DisCountPolicy {
-  private List<DiscountCondition> conditions = new ArrayList<>();
+  private List<DiscountCondition> conditions;
 
   public DisCountPolicy(DiscountCondition ... conditions) {
     this.conditions = Arrays.asList(conditions);
